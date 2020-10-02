@@ -1,0 +1,2 @@
+azure-functions
+grafana_backup==1.1.3

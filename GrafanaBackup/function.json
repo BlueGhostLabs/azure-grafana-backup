@@ -1,0 +1,18 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "mytimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 */5 * * * *"
+    },
+    {
+      "name": "outputblob",
+      "type": "blob",
+      "path": "backups/{blobName}",
+      "connection": "MyStorageConnectionAppSetting",
+      "direction": "out"
+    }
+  ]
+}
